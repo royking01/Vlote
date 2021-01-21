@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> velocity</title>
+	     <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200&family=Roboto:wght@100;300;400;500;700&family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+ 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<style type="text/css">
+
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-family: Blinker, Rubik, Montserrat, 'sans-serif', Roboto, sans-serif 'Roboto Mono', 'monospace' 'Rubik';
+	
+
+}
+p{
+	font-size: 10px;
+}
+body{
+	background-color: grey;
+	box-sizing: border-box;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#ad{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#bd{
+		background-color:#160d2b;
+		height: 650px;
+		min-width: 550px;
+		max-width: 550px;
+		margin: auto;
+		padding: 20px;
+   		 box-sizing: border-box;
+   		     font-size: smaller;
+    line-height: 15px;
+
+
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header h1{
+	font-size: 2em;
+	font-weight: 100;
+}
+header h5{
+	/*font-size: 1rem;*/
+	font-weight: 100;
+}
+main{
+	background-color: white;
+	height: 75%;
+	width: 100%;
+	/*padding: 0 20px;*/
+	box-sizing: border-box;
+	/*margin: auto;*/
+	margin: 10px 0;
+	/*display: grid;*/
+	/*grid-template-rows: 0.1fr 5fr 0.1fr;*/
+	color: grey;
+}
+#hed{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#info{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
+}
+.message{
+	display: flex;	
+	    padding: 0 20px;
+    box-sizing: border-box;
+}
+a{
+	/*text-decoration: none;*/
+	color: white;
+}
+#foot{
+	text-align: center;
+	margin: 30px;
+
+}
+#details{
+height: 70%;
+display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    grid-gap: 15px;
+
+}
+#hed{
+	height: 15%;
+	background-color: whitesmoke;
+	padding:0 20px;
+}
+#hed h1{
+	color: black;
+}
+#driver{
+	display: flex;
+	height: 10%;
+	align-items: center;
+	color: black;
+}
+#driver img{
+    width: 40px;
+    height: 40px;
+	border-radius: 50%;
+		padding:0 10px;
+}#driver p{
+	font-size: 10px;
+}
+#map{
+	display: grid;
+    grid-template-rows: 1fr 1fr;
+      background-color: whitesmoke;
+}
+#map img{
+	width: 100%;
+}
+#map-time{
+	display: grid;
+	    grid-template-rows: 1fr 1fr;
+    padding: 5px;
+    box-sizing: border-box;
+}#time {
+	display: flex;
+	justify-content: center;
+	    border-top: 1px solid #e6e1e1;
+}
+#time ul{
+	    display: flex;
+    text-align: center;
+    list-style: none;
+    }#time ul li{
+    	margin:0 20px;
+    }
+    #time ul li span{
+    	color: black;
+    }
+    .off{
+    	display: flex;
+    	align-items: center;
+    	font-size: 12px;
+    }
+    .off h2{
+    	font-weight: 200;
+    	font-size: 15px;
+    	color: black;
+    }
+   .off:first-child i{
+    	color: green;
+    }
+     .off i{
+     	margin-right: 5px;
+    	color: red; 
+
+    }
+
+    #price{
+    	border-top: 1px solid #d8d8d8;
+    }
+    #price h3{
+    	text-transform: uppercase;
+    	    text-align: center;
+    text-transform: uppercase;
+    transform: translateY(-7px);
+    font-size: 12px;
+    font-weight: 200;
+    padding: 0 5px;
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    }
+    #price ul{
+    	list-style: none;
+    }
+    #price ul li{
+    	display: flex;
+    	justify-content: space-between;
+    	text-align: end;
+    	font-size: 10px;
+    	padding: 5px 0;
+    }
+    #price p{
+    	    display: flex;
+    justify-content: space-between;
+   
+    
+        /*align-items: center;*/
+    padding: 5px 0;
+    text-align: end;
+    }
+    #price #pp{
+    	border-top: 1px solid #f5f4f3;
+    	 margin-top: 10px;
+    	 padding: 10px 0;
+    }
+    #total p{
+    	    display: inline;
+    text-align: inherit;
+    }
+    #total{
+    	display: flex;
+    	justify-content: space-between;
+    	border-top: 1px solid #f5f4f4;
+    	border-bottom: 1px solid #f5f4f3;
+    	padding: 10px 0;
+    	align-items: center;
+    }
+    .black{
+    	color: black;
+    }
+</style>
+</head>
+<body>
+	<div id="ad">
+		<div id="bd">
+		<header> 
+			<h1 id="logo"> Velocity </h1>
+			 
+			 <h5 id="date"> November 12, 2014</h5>
+
+		</header>
+		<main>
+
+
+				<div id="hed">
+					<h1>$9.32</h1>
+					<p>Thanks for choosing Velocity, jimmy</p>
+				</div>
+
+				<div id="details">
+
+					<div id="map">
+						<img src="map.jpg">
+						<div id="map-time">
+							<div class="off">
+								 <i class="fas fa-record-vinyl"></i>
+								 <div><h2>10:10am</h2>
+							     	<p>872 Rhode island street, san Francisco, Ca</p>
+							     	</div>
+							</div>
+							<div class="off">
+							 <i class="fas fa-record-vinyl"></i>
+								<div>
+								<h2>10:22am</h2>
+								<p>301-339 Brham island , san Francisco, Ca</p>
+								</div>
+							</div>
+							<div id="time">
+								
+								<ul> 
+									<li>
+										car <br>
+										<SPAN> uberX</SPAN>
+									</li>
+									<li>
+										miles <br>
+										<SPAN> 2.42</SPAN>
+									</li>
+									<li>
+										TRIP TIME<br>
+										<SPAN> 00:11:27</SPAN>
+									</li>
+
+
+
+								</ul>
+							</div>
+							
+						</div>
+						
+					</div>
+					<div id="price">
+						<h3> FARE BREAKDOWN</h3>
+
+
+						<ul>
+							<li>
+								Base Fare <span> 2.21</span>
+							</li>
+							<li>
+								Distance <span> 2.21</span>
+							</li>
+							<li>
+								Time <span> 2.21</span>
+							</li>
+						</ul>
+
+						<p id="pp"> <b class="black"> Subtotal</b> <span> $8.32 </span></p>
+						<p>  insurance <span> 1.00</span></p>
+
+						<div id="total">
+							<p>Charged <br>
+							<span> CARD DEETS</span>
+							</p>
+							<h2 class="black"> $9.32</h2>
+						</div>
+						
+					</div>
+
+
+					
+				</div>
+				<div id="driver">
+					<img src="driver.jpg"> 
+					<p> <b>You rode with David</b> 
+						<br>
+						Transportation Network company, Raser-CA, LLC.
+					</p>
+					
+				</div>
+
+
+
+
+			
+		</main>
+		<div id="info"> 
+			<div class="message">
+				<p>
+				 <b>Velocity support</b> <br>
+				 <a href="#">contact us</a> with questions about your trip,
+				 Leave somthing behind? <a href="#">track it down.</a>
+				</p>
+				
+			</div>
+			<div class="message">
+				<p>
+				 <b>Give $30, Get $30</b> <br>
+				 share code:a134z 
+				</p>
+				
+			</div>
+
+		</div>
+
+		<div id="foot"> <p>Read about our <a href="#">Zero tolerance Policy</a></p></div>
+	</div>
+
+		</div>
+ 	  <script src="https://kit.fontawesome.com/898084b7c8.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
